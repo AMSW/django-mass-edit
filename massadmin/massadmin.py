@@ -376,3 +376,7 @@ class MassAdmin(admin.ModelAdmin):
             context,
             change=True,
             obj=obj)
+
+    # Extension, if necessary general solution
+    def get_readonly_fields(self, request, obj=None):
+        return self.admin_obj.get_readonly_fields(request, obj)
