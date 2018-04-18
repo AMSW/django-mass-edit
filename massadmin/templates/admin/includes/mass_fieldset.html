@@ -1,7 +1,7 @@
 {% load i18n %}
 
 <fieldset class="grp-module module {{ fieldset.classes }}">
-  {% if fieldset.name %}<h2 class="grp-collapse-handler">{{ fieldset.name }} Mass Edit</h2>{% endif %}
+  {% if fieldset.name %}<h2 class="grp-collapse-handler">{{ fieldset.name }} {% trans "Mass Edit" %}</h2>{% endif %}
   {% if fieldset.description %}<div class="grp-row row"><p class="grp-description">{{ fieldset.description|safe }}</p></div>{% endif %}
   
   {% if general_error %}
