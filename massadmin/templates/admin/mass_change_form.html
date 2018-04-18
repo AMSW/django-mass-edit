@@ -13,7 +13,7 @@
       }
     }
     if ( ! some_checked ) {
-    	some_checked = confirm('You have not checked off any fields to update. Are you sure you wish to continue?');
+    	some_checked = confirm('{% trans "You have not checked off any fields to update. Are you sure you wish to continue?" %}');
     }
     return some_checked;
   }
